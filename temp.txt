@@ -1,0 +1,11 @@
+¦ ¦ <ul>                                                                      
+  1   ¦ ¦ ¦ <li> {element.type} </li>                                               
+  2   ¦ ¦ ¦ <li> {element.title} </li>                                              
+  3   ¦ ¦ ¦ {children !== undefined && children.map((child) => (                    
+  4   ¦ ¦ ¦ ¦ renderJson(child)                                                     
+  5   ¦ ¦ ¦ ))}                                                                     
+  6   ¦ ¦ </ul>                                                                     
+  7   ¦ )              
+
+  ¦ ¦ {element.text !== undefined &&
+  1   ¦ ¦ ¦ textRender(element.text, element.bold)}
